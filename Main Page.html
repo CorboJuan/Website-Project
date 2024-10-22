@@ -3,39 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arch Bark</title>
+    <title>Arch Bark - Login</title>
+        <!--External styling-->
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <!--External styling-->
-      <link rel="stylesheet" href="styles.css">
-</head> 
+<header>
+    <h1>Arch Bark</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#help">Help</a>
+        <a href="#login">Login</a>
+    </nav>
+</header>
 
+<div class="login-container">
+    <h2>Login</h2>
+    <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p><a href="ForgotPassword">Forgot Password?</a></p>
+    <p>New here? <a href="New Account">Create an account</a></p>
+</div>
 
-    <style>       
-     body {
-        background-color: aliceblue}
-        </style>
-
-    <header>
-        <div>
-        <h1 class="title">Arch Bark</h1> 
-        </div>
-    </header>
-
-<div class="login">
-
-<h2 class="loginheader">Login</h3>
-
-    <body>
-    <form action="path_to_to_server_file">
-    
-        <label for="id1">
-      Username:<input type="text" placeholder="Enter Username" id="id1" class="input field"></label>
-  <br>
-  <br>
-      <label for="id2">
-      Password:<input type="password" placeholder="password" id="id2" class="input field"></label>
-  <br>
-  <br>
-<input type="submit" placeholder="enter">    
-    </body>
-</div>    
+</body>
+</html>

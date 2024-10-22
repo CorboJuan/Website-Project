@@ -1,22 +1,113 @@
-.title{
-    background-color:rgb(130, 157, 181);;
+body {
+    background: linear-gradient(to right, aliceblue, #f0f8ff);
+    font-family: 'Arial', sans-serif;
+    margin: 0; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(130, 157, 181);
     color: brown;
     font-family: fantasy;
-    width: 1480px;
-}
-.header{
-    background-color: rgb(130, 157, 181);
-}
-
-.login{
-    border-radius: 10px;
-    border-style: solid;
-    border-color: black;
-    width: 300px;
-    height: 400px;
-
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto; 
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.space{
-   visibility: hidden;
+h1 {
+    margin: 0;
+    flex: 1; 
+}
+
+nav {
+    flex: 1;
+    text-align: center; 
+}
+
+nav a {
+    color: brown;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px; 
+    margin: auto; 
+    margin-top: auto; 
+    margin-bottom: auto; 
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 260px;
+    padding: 12px;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color:  rgb(130, 157, 181); 
+    outline: none;
+}
+
+button {
+    width: 287px;
+    padding: 12px;
+    background-color: rgb(130, 157, 181); 
+    color: brown;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color:  rgb(104, 146, 183);
+    transform: scale(1.05);
+}
+
+p {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+a {
+    color:  rgb(104, 146, 183);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
