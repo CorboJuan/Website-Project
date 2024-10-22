@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(to right, aliceblue, #f0f8ff);
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(130, 157, 181);
+    color: brown;
+    font-family: fantasy;
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto; 
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    margin: 0;
+    flex: 1; 
+}
+
+nav {
+    flex: 1;
+    text-align: center; 
+}
+
+nav a {
+    color: brown;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
