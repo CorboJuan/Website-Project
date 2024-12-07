@@ -1,0 +1,234 @@
+body {
+    background: linear-gradient(to right, aliceblue, #f0f8ff);
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(130, 157, 181);
+    color: brown;
+    font-family: 'Fantasy', cursive;
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+} 
+
+h2{ 
+    margin:0; 
+    font-size:1rem; 
+    font-weight:normal;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: brown;
+    text-decoration: none;
+    padding: 12px 18px;
+    margin: 0 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 60px 0;
+    margin-top: 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(130, 157, 181);
+    margin-bottom: 30px;
+}
+
+#about img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+#about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+#projects .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+#projects .card:hover {
+    transform: scale(1.05);
+}
+
+#projects .card img {
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card-body .btn {
+    background-color: rgb(130, 157, 181);
+    color: #fff;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.card-body .btn:hover {
+    background-color: brown;
+    color: #fff;
+}
+
+#contact form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: rgb(130, 157, 181);
+    outline: none;
+}
+
+#contact button {
+    background-color: rgb(130, 157, 181);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: brown;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+        text-align: left;
+        width: 100%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 0;
+    }
+
+    #about .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #projects .card {
+        margin-bottom: 20px;
+    }
+
+    #projects .card img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    #contact form {
+        padding: 20px;
+    }
+}
