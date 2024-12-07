@@ -3,65 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< Updated upstream
-    <title>Arch Bark - Help</title>
-    <!-- External Styling -->
-    <link rel="stylesheet" href="styleshelp.css">
-=======
     <title>Arch Bark - About</title>
-            <!--External styling-->
-            <link rel="stylesheet" href="stylesabout.css">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
->>>>>>> Stashed changes
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, aliceblue, #f0f8ff);
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            background-color: rgb(130, 157, 181);
+            color: brown;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav a {
+            color: brown;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .about-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .about-container h2 {
+            margin-bottom: 20px;
+            color: rgb(80, 80, 120);
+        }
+
+        .about-container p {
+            font-size: 1.1rem;
+            color: rgb(100, 100, 100);
+            line-height: 1.6;
+        }
+    </style>
 </head>
-
-<header>
-    <h1>Arch Bark</h1>
-    <nav>
-        <a href="Arch.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="help.html">Help</a>
-        <a href="Login.html">Login</a>
-    </nav>
-</header>
-
 <body>
-    <main>
-        <section class="help-content">
-            <h2>Need Help?</h2>
-            <p>Welcome to the Arch Bark Help page! Below are some common issues and resources to assist you:</p>
-            
-            <h3>Frequently Asked Questions (FAQs)</h3>
-            <ul>
-                <li><strong>How do I create an account?</strong> Visit the <a href="Login.html">Login</a> page and click on "Sign Up" to create a new account.</li>
-                <li><strong>How do I navigate the website?</strong> Use the navigation bar at the top of every page to explore Home, Portfolio, About, and Help sections.</li>
-                <li><strong>Can I update my profile?</strong> Yes, log into your account and go to your profile settings to make changes.</li>
-            </ul>
 
-            <h3>Contact Support</h3>
-            <p>If you can't find what you're looking for, feel free to reach out to us:</p>
-            <ul>
-                <li>Email: <a href="mailto:support@archbark.com">support@archbark.com</a></li>
-                <li>Phone: (000) 000-0000</li>
-                <li>Live Chat: Available Monday to Friday, 9 AM to 5 PM EST</li>
-            </ul>
-
-            <h3>Guides and Tutorials</h3>
-            <p>Explore our guides to learn more:</p>
-            <ul>
-                <li><a href="Arch.html">How to Build Your Portfolio</a></li>
-                <li><a href="portfolio.html">Navigating Arch Bark</a></li>
-                <li><a href="about.html">Full FAQ Section</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Arch Bark. All rights reserved.</p>
+    <header>
+        <h1>Arch Bark</h1>
         <nav>
-          
+            <a href="Arch.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="help.html">Help</a>
+            <a href="Login.html">Login</a>
         </nav>
-    </footer>
+    </header>
+
+    <div class="about-container">
+        <h2>About Us</h2>
+        <p>We are a group of passionate architecture majors at NJIT, committed to shaping the built environment with creativity, precision, and sustainability. Our program focuses on blending technical skills with artistic design, preparing us to solve complex problems in modern architecture.</p>
+        <p>At NJIT, we are inspired by the latest trends in architecture, working with cutting-edge tools and learning from industry experts. Together, we aspire to contribute to the future of architecture, creating spaces that inspire and serve communities around the world.</p>
+    </div>
+
 </body>
 </html>
